@@ -40,10 +40,16 @@ a{
 
 .white-bg{
     background-color: white;
+    color: black;
 }
 
 .purple-bg{
     background-color: #9792E4;
+    color: white;
+}
+
+.grey-bg{
+    background-color: #333333;
     color: white;
 }
 
@@ -102,7 +108,7 @@ button{
     margin-top: 20px;
 }
 
-.card .fa-solid{
+.first-section .card .fa-solid{
     font-size: 4rem;
 }
 
@@ -143,6 +149,86 @@ img{
     background-color: white;
     color: black;
     border-radius: 30px;
+    text-align: center;
+}
+
+.third-section{
+    text-align: center;
+}
+#circle{
+    border-radius: 100%;
+    padding: 15px 20px;
+    font-size: 1.2rem;
+    color: black;
+}
+
+.text-testimonials div{
+    padding: 20px 0;
+}
+
+.text-testimonials h2{
+    color: #9792E4;
+}
+
+.circle-pic img{
+    clip-path: circle();
+}
+
+.quote-testimonial div{
+    padding: 20px 0;
+}
+
+.fourth-section h1, h2, .fifth-section h1{
+    color: #9792E4;
+}
+
+#benefits h1{
+        text-align: center;
+        color: white;
+        padding-bottom: 50px;
+}
+
+h1{
+    font-size: 2rem;
+    line-height: 2.5rem;
+}
+
+.text-about-us div, .purple-text-about-us div {
+    padding: 20px 0;
+}
+
+.purple-text-about-us img{
+    clip-path: circle();
+}
+
+.pic-about-us{
+    width: 50%;
+}
+.relative{
+    position: relative;
+}
+
+.left-quote{
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #9792E4;
+    font-size: 3rem;
+}
+
+.purple-text-about-us button{
+    padding: 5px 20px;
+}
+
+
+.seventh-section div{
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.seventh-section span{
+    color: #9792E4;
+    text-decoration: underline;
 }
 
 /* TABLET */
@@ -172,7 +258,59 @@ img{
         flex-basis: calc(100% / 3 - 10px);
     }
 
+    .testimonial{
+        display: flex;
+        align-items: center;
+    }
 
+    .basis50{
+        flex-basis: calc(100% / 2 - 50px);
+    }
+
+    .fourth-section-cards{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .fourth-section-card{
+        flex-basis: calc(100% / 2 - 10px);
+    }
+
+    .fifth-section{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .text-about-us{
+        flex-basis: 65%;
+    }
+
+    .left-about-us{
+        flex-basis: 30%;
+    }
+}
+
+.sixth-section div{
+    padding: 20px 0;
+    text-align: center;
+}
+
+.small-font{
+    font-size: 0.9rem;
+}
+
+.smaller-font{
+    font-size: 0.7rem;
+}
+
+#yellow{
+    color: #fdd246;
+    font-size: 3rem;
+}
+
+#link{
+    text-decoration: underline;
 }
 
 /* DESKTOP */
@@ -208,4 +346,24 @@ img{
         text-align: left;
     }
 
+    .strategic-app{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    /* .basis50{
+        flex-basis: calc(100% / 2 - 50px);
+    } */
+
+    .f-align-end{
+        align-self: flex-end;
+    }
+
+    #app-dev-pic img{
+        width: 60%;
+    }
+
+    .fourth-section-card{
+        flex-basis: calc(100% / 3 - 10px);
+    }
 }
