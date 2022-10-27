@@ -2,12 +2,61 @@
     margin: 0;
     padding: 0px;
     box-sizing: border-box;
+    font-family: sans-serif;
+}
+a{
+    color: white;
+    text-decoration: none;
 }
 
 /* MOBILE */
+.flex{
+    display: flex;
+}
 
+.f-space-between{
+    justify-content: space-between;
+}
 
+.f-center{
+    align-items: center;
+}
 
+.footer-height{
+    height: 80px;
+}
+
+.blue-bg{
+    background-color: #0084FD;
+}
+
+.white-bg{
+    background-color: white;
+}
+
+button{
+    border-style: none;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.footer-menu div{
+    padding: 10px;
+}
+
+.fa-bars{
+    color: white;
+    font-size: 1.5rem;
+}
+
+.width-a{
+    width: 80%;
+    margin: auto;
+}
+
+.footer-menu{
+    display: none;
+}
 
 /* TABLET */
 @media screen and (max-width:768px){
@@ -16,4 +65,12 @@
 
 /* DESKTOP */
 @media screen and (min-width:769px){
+    .hamburger{
+        display: none;
+    }
+
+    .footer-menu{
+        display: flex;
+        flex-basis: 40%;
+    }
 }
