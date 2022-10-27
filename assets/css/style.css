@@ -148,7 +148,7 @@ section h2{
 
 
     .first-card{
-        flex-basis: 60%;
+        flex-basis: 66%; 
     }
 
     #phone{
@@ -156,12 +156,12 @@ section h2{
         left: 10px;
     }
 
-    .second-card{
+    /* .second-card{
         flex-basis: 38%;
-    }
+    } */
 
-    .third-card{
-        flex-basis: calc(96% / 3);
+    .third-card, .second-card{
+        flex-basis: calc(100% / 3 - 10px);
     }
 
 
