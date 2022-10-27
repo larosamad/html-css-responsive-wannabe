@@ -126,8 +126,6 @@ img{
     line-height: 0;
 }
 
-
-
 section h2{
     color: #0084FD;
     text-align: center;
@@ -155,10 +153,6 @@ section h2{
         width: 40%;
         left: 10px;
     }
-
-    /* .second-card{
-        flex-basis: 38%;
-    } */
 
     .third-card, .second-card{
         flex-basis: calc(100% / 3 - 10px);
