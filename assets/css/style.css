@@ -28,10 +28,22 @@ a{
 
 .blue-bg{
     background-color: #0084FD;
+    color: white;
+}
+
+.light-blue-bg{
+    background-color: #B5DDFF;
 }
 
 .white-bg{
     background-color: white;
+}
+
+footer{
+    z-index: 999;
+    position: fixed;
+    width: 100%;
+    top: 0
 }
 
 button{
@@ -56,6 +68,43 @@ button{
 
 .footer-menu{
     display: none;
+}
+
+.border-radius{
+    border-radius: 30px;
+}
+
+.first-section{
+    margin-top: 100px;
+    padding: 30px;
+    height: 650px;
+}
+
+.first-section > div{
+    margin-top: 20px;
+}
+
+.center{
+    text-align: center;
+}
+
+.long-button{
+    padding: 10px 50px;
+    letter-spacing: 2px;
+}
+
+img{
+    width: 100%;
+}
+
+#phone{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.p-relative{
+    position: relative;
 }
 
 /* TABLET */
