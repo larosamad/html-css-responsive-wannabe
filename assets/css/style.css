@@ -3,6 +3,7 @@
     padding: 0px;
     box-sizing: border-box;
     font-family: sans-serif;
+    line-height: 1.5rem;
 }
 a{
     color: white;
@@ -39,11 +40,20 @@ a{
     background-color: white;
 }
 
+.purple-bg{
+    background-color: #9792E4;
+    color: white;
+}
+
 footer{
     z-index: 999;
     position: fixed;
     width: 100%;
-    top: 0
+    top: 0;
+}
+
+section{
+    padding: 100px 0;
 }
 
 button{
@@ -74,16 +84,25 @@ button{
     border-radius: 30px;
 }
 
-.first-section{
-    margin-top: 100px;
-    padding: 30px;
-    height: 650px;
+.first-card{
+    margin-top: 80px;
 }
 
-.first-section > div{
+.card > div{
     margin-top: 20px;
 }
 
+#phone{
+    line-height: 0px;
+}
+
+#first-card > div{
+    margin-top: 20px;
+}
+
+.card .fa-solid{
+    font-size: 4rem;
+}
 .center{
     text-align: center;
 }
@@ -93,33 +112,92 @@ button{
     letter-spacing: 2px;
 }
 
+.card{
+    margin-top: 20px;
+    padding: 30px;
+}
+
+.first-card{
+    padding-bottom: 0;
+}
+
 img{
     width: 100%;
+    line-height: 0;
 }
 
-#phone{
-    position: absolute;
-    bottom: 0;
-    right: 0;
-}
 
-.p-relative{
-    position: relative;
+
+section h2{
+    color: #0084FD;
+    text-align: center;
 }
 
 /* TABLET */
-@media screen and (max-width:768px){
-    
+@media screen and (min-width:426px){
+
+    .width-a{
+        width: 90%;
+    }
+
+    .first-section{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+
+
+    .first-card{
+        flex-basis: 60%;
+    }
+
+    #phone{
+        width: 40%;
+        left: 10px;
+    }
+
+    .second-card{
+        flex-basis: 38%;
+    }
+
+    .third-card{
+        flex-basis: calc(96% / 3);
+    }
+
+
 }
 
 /* DESKTOP */
 @media screen and (min-width:769px){
+    .width-a{
+        width: 60%;
+    }
+
     .hamburger{
         display: none;
     }
 
     .footer-menu{
         display: flex;
-        flex-basis: 40%;
     }
+
+    .first-card{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #phone{
+        left: none;
+        right: 20px;
+        align-self: flex-end;
+    }
+
+    #first-card {
+        flex-basis: 60%;
+    }
+
+    #first-card > div{
+        text-align: left;
+    }
+
 }
