@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* MOBILE */
+
+
+
+
+/* TABLET */
+@media screen and (max-width:768px){
+    
+}
+
+/* DESKTOP */
+@media screen and (min-width:769px){
+}
